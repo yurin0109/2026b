@@ -1,52 +1,91 @@
-<!DOCTYPE html>   <!-- HTML 주석 -->    <!-- HTMLS 버전 알림 / 생략가능 -->
+<!DOCTYPE html> <!-- HTML5 버전 선언 -->
 
-<html>  <!-- HTML 시작-->
+<html lang="ko"> <!-- HTML 시작 -->
 
-    <head>  <!-- HTML 헤더(옵션) 시작 -->
-        <meta charset="UTF-8"> <!-- HTML 코드의 번역(인코딩)방법 : UTF-8 한글지원-->
-        <title> Document </title> <!-- HTML 문서 제목(브라우저 탭 표시) -->
-    </head>     <!-- HTML 헤더(옵션) 끝 -->
-<body>         <!-- HTML 헤더(옵션) 본문 시작-->
+<head> <!-- HTML 헤더 시작 -->
+
+    <meta charset="UTF-8"> <!-- 한글 인코딩 -->
+    <title>Document</title> <!-- 브라우저 탭 제목 -->
+
+</head> <!-- HTML 헤더 끝 -->
+
+<body> <!-- HTML 본문 시작 -->
+
     안녕하세요.
-    <h1> 안녕하세요1 </h1>       <!-- 제목 마크업(큰글씨) -->
-    <h2> 안녕하세요2 </h2>
-    <h3> 안녕하세요3 </h3>
-    <h4> 안녕하세요4 </h4>
-    <h5> 안녕하세요5 </h5>
-    <h6> 안녕하세요6 </h6>
-    <h7> 안녕하세요7 </h7>        <!-- p :  문단 마크업 -->
 
-    <ol>             <!-- div : 블럭 구역 : 추후에 레이아웃 작업 -->
-        <li> 항목1 </li>
-        <li> 항목2 </li>   
+    <!-- 제목 태그 -->
+    <h1>안녕하세요1</h1>
+    <h2>안녕하세요2</h2>
+    <h3>안녕하세요3</h3>
+    <h4>안녕하세요4</h4>
+    <h5>안녕하세요5</h5>
+    <h6>안녕하세요6</h6>
+
+    <!-- h7 태그는 존재하지 않는다. -->
+
+    <!-- 문단 태그 -->
+    <p>문단입니다.</p>
+
+    <!-- 순서 있는 목록 -->
+    <ol>
+        <li>항목1</li>
+        <li>항목2</li>
     </ol>
-    <ul> <!--하이퍼링크-->
-        <li> 항목1 </li>
-        <li> 항목2 </li> 
+
+    <!-- 순서 없는 목록 -->
+    <ul>
+        <li>항목1</li>
+        <li>항목2</li>
     </ul>
-        <a href="https://naver.com"> 네이버링크 </a>
-        <a href="https://sungkyul.ac.kr"> 성결대학교 홈페이지 </a>
-        <a href="tel:010-1234-5678"> </a>
 
-        <img src = "./코난.jpeg" />         <!-- img : 이미지 마크업 -->
-        <img src = "../코난.jpeg" /> 
-    <!-- 상대경로란? 현재 코드를 작성하는 위치 기준으로 불러올 파일의 경로 지정 -->
+    <!-- 하이퍼링크 -->
+    <a href="https://naver.com">네이버</a>
+    <br>
+
+    <a href="https://sungkyul.ac.kr">성결대학교</a>
+    <br>
+
+    <a href="tel:010-1234-5678">전화걸기</a>
+
+    <!-- 이미지 -->
+    <img src="./코난.jpeg" alt="코난">
+    <img src="../코난.jpeg" alt="코난">
+
     <!--
-        ./ : 현재 폴더이며 생략 가능
-        .// : 상위 폴더 1번 이동  , day02 폴더 기준으로 상위폴더 1번 이동하면 2026B_FRONT 경로
-        .//.// : 상위 폴더 2번 이동
+    상대경로
+
+    ./      현재 폴더 (생략 가능)
+
+    ../     상위 폴더 한 단계
+
+    ../../  상위 폴더 두 단계
     -->
-    <!-- 절대경로란? 불러올 파일의 전체 경로 지정 , 로컬 VS 서버(네트워크로 자료 제공하는 PC) --> 
-        <img src = C:\2026b\day02\코난.jpeg/>
-        <img src = https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MzBfMjI1%2FMDAxNjkzMzgyOTc0NzYy.7q8RD_aIepwCT7_gq11Hmt28VSEZrT17oxea1GwPDOAg.zKhJyLioNJ6jC9lr2UAoxe6N7orn7hXsmoQqDY5j3tYg.JPEG.solo435%2FScreenshot_2023-08-30_at_17.05.58.JPG&type=sc960_832/>
-        <br/>
-        <audio src="" controls>  </audio>
-        <video src="" controls>  </audio>
-        <!-- autoplay 브라우저 정책상 불가능. 단 muted(음소거)하면 가능하다-->
 
+    <!-- 절대경로 -->
+    <img src="C:\2026B\day02\코난.jpeg" alt="코난">
 
-        <!-- 유튜브 영상 퍼가기-->
-        <!-- 구글 지도 퍼가기 -->
-        
-    </body>
+    <!-- 인터넷 이미지 -->
+    <img src="https://이미지주소" alt="이미지">
+
+    <br>
+
+    <!-- 오디오 -->
+    <audio src="" controls></audio>
+
+    <!-- 비디오 -->
+    <video src="" controls></video>
+
+    <!--
+    autoplay는 대부분 브라우저에서 막혀 있다.
+    muted를 같이 사용하면 자동재생 가능
+    -->
+
+    <!--
+    iframe
+    - 유튜브 퍼가기
+    - 구글 지도 퍼가기
+    -->
+
+</body>
+
 </html>

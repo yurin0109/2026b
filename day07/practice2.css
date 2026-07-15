@@ -1,0 +1,33 @@
+.제목1{
+    color:goldenrod;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+
+
+.본문1{
+    color:goldenrod;
+
+}
+
+.바탕{
+    background-color: beige;
+}
+
+
+
+
+
+
+
+
+
+/* 자식선택자 : 상위선택자 > 자식선택자 */
+div > h3{  color: green; }
+
+/* 자손선택자 : 상위선택자 하위선택자 */
+div h3{ background-color: aqua ;}
+
+/* 복수선택자 : , 이용한 선택자 2개 이상 작성 */
+h3 , h4{ color: grey; }

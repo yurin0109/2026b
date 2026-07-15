@@ -1,0 +1,26 @@
+.제목{
+    font-family: '궁서';
+    font-style: oblique;
+    font-size: 45px;
+}
+
+.본문1{
+    color:darkcyan;
+    font-weight: bolder;
+    word-spacing: 10px; /* 어간 */
+    letter-spacing: 2px; /* 자간 */
+    line-height: 120%;  /* 줄 간격 */
+}
+
+.본문2{
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline line-through overline;
+    text-align: center;
+    word-spacing: 10px; /* 어간 */
+    letter-spacing: 2px; /* 자간 */
+    line-height: 120%;  /* 줄 간격 */
+}
+
+
+
