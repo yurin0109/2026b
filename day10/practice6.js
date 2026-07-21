@@ -3,20 +3,11 @@
 */
 
 function isAdult( age ){
-    if( age >= 20 )
-        console.log( 'true' )
-    }
-        else if( age < 20 ){
-            console.log( 'false' )
-
-
-    }
+    if( age >= 20 ){ return true; }
+    else{ return false; )
+}
             
-    isAdult(25)
-
-    isAdult(17)
-
-
+    
 
 
 /* 실습 2: 배열의 총합 구하기
@@ -27,15 +18,34 @@ const numbers = [ 10 , 20 , 30 , 40 , 50 ];
 
 
 
+// 3번
+// 자판기 : 1. 1000원 , 3번 2. 3번이 1000원 이하 검사 3. 3번(콜라)와 잔돈 , 선택 불가능
+const words = [ 'apple' , 'banana' , 'kiwi' , 'strawberry' ]
+
+function findLongsWord( 문자열배열 ){
+    // .length : 문자열 같이 반환 속성
+    let max = 문자열배열[0] // 첫번째 
+    for( let index = 1 ) ; index <= 문자열배열.length-1 ; index++{
+        // 만약에 max에 저장된 문자열 같이 보다 index번째 문자열 길이가 이상이면
+        if( max.length <= 문자열배열[index].length ){
+            max = 문자열배열[index]
+        }
 
 
-
-
-/*예제 7: 배열을 매개변수로 전달
-임의의 이름 들이 담긴 배열을 매개변수로 받아, for 반복문을 사용하여 배열의 모든 요소를 콘솔에 하나씩 출력하는 printFruits 함수를 정의하시오. */
-function printFruits( namaList ){
-    for( let index = 0 ; index <= nameList.length - 1 ; index++ ){
-        console.log( namaList[index] )
     }
+
 }
-printFruits( [ '사과' , '포도' , '바나나' ] )                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+console.log( findLongsWord( words ) )
+
+
+
+
+
+
+
+
+
+
+
+

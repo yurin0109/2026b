@@ -1,0 +1,43 @@
+*{ 
+    box-sizing: border-box; /* content+padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px; /* 기본여백 제거 */
+}
+a{
+    text-decoration: none; /* a하이퍼링크 밑줄 제거 */
+    color: black; /* a하이퍼링크 색상 검정 */
+}
+li{ list-style-type: none; } /* li 항목 글머리 제거 */
+
+
+
+.배경{
+    background-color: #1c334d;
+    color: white ;
+    
+    
+}
+
+.aa{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+.푸터{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.플렉스{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    box-sizing: border-box; /* content+padding 포함 사이즈 정의 */
+    padding: 0px; margin: 0px; /* 기본여백 제거 */
+}
+
